@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@if (TempData["Log_info"] != null)
+{
+    <div id="popup">@TempData["Log_info"]</div>
+}
+
+<h2>News list</h2>
+
+@model BLL.PagedNewsViewModel
+
+@foreach (var item in Model.NewsList)
+{
+    <div class="list-group" style="width: 75%;">
+        <a href="/Home/NewsByID/@item.ID" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">@item.Title</h5>
+                <small>@(item.PublishedDate?.ToString("dd MMM yyyy"))</small>
+            </div>
+            <p class="mb-1" style="
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                max-width: 100%;">
+                @item.Description
+            </p>
+            <div class="d-flex w-100 justify-content-between">
+                <small>@item.Source</small>
+                <small>@item.Category</small>
+            </div>
+        </a>
+    </div>
+    <br />
+}
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        @if (Model.CurrentPage > 1)
+        {
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("Index", new { page = Model.CurrentPage - 1 })">Previous</a>
+            </li>
+        }
+
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+            </li>
+        }
+
+        @if (Model.CurrentPage < Model.TotalPages)
+        {
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("Index", new { page = Model.CurrentPage + 1 })">Next</a>
+            </li>
+        }
+    </ul>
+</nav>
+
+<script>
+    const popup = document.getElementById("popup");
+    if (popup) {
+        // Apply quick inline style
+        popup.style.position = "fixed";
+        popup.style.top = "5%";
+        popup.style.left = "50%";
+        popup.style.transform = "translate(-50%, -50%)";
+        popup.style.backgroundColor = "Green";
+        popup.style.color = "white";
+        popup.style.padding = "15px 25px";
+        popup.style.borderRadius = "8px";
+        popup.style.fontSize = "18px";
+        popup.style.textAlign = "center";
+        popup.style.boxShadow = "0 4px 8px rgba(0,0,0,0.3)";
+        popup.style.display = "block";
+
+        // Hide after 3 seconds
+        setTimeout(() => {
+            popup.style.display = "none";
+        }, 3000);
+    }
+</script>

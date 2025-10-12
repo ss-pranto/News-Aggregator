@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="41c90e4fd91a4e5d8b21cb45b1a44adf" Name="Diagram1" ZoomLevel="37">
+        <EntityTypeShape EntityType="News_AggregatorModel.News" Width="1.5" PointX="11.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_AggregatorModel.NewsWorkFlow" Width="1.5" PointX="7.125" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_AggregatorModel.Recommendation" Width="1.5" PointX="11.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_AggregatorModel.Tag" Width="1.5" PointX="13.5" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_AggregatorModel.User" Width="1.5" PointX="9.125" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="News_AggregatorModel.FK_News_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="News_AggregatorModel.FK_NewsWorkFlows_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="News_AggregatorModel.FK_Recommendations_News" ManuallyRouted="false" />
+        <AssociationConnector Association="News_AggregatorModel.FK_NewsWorkFlows_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="News_AggregatorModel.FK_Recommendations_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="News_AggregatorModel.NewsTag" Width="1.5" PointX="13.75" PointY="4.25" />
+        <AssociationConnector Association="News_AggregatorModel.FK_NewsTags_News" />
+        <AssociationConnector Association="News_AggregatorModel.FK_NewsTags_Tags" />
+        <EntityTypeShape EntityType="News_AggregatorModel.ReporterRating" Width="1.5" PointX="9.125" PointY="7.625" />
+        <AssociationConnector Association="News_AggregatorModel.FK_ReporterRatings_Users" />
+        <EntityTypeShape EntityType="News_AggregatorModel.NewsPopularity" Width="1.5" PointX="13.875" PointY="7.625" />
+        <AssociationConnector Association="News_AggregatorModel.FK_NewsPopularity_News" />
+        <EntityTypeShape EntityType="News_AggregatorModel.ReaderActivity" Width="1.5" PointX="9.5" PointY="1" />
+        <AssociationConnector Association="News_AggregatorModel.FK_ReaderActivity_News" />
+        <AssociationConnector Association="News_AggregatorModel.FK_ReaderActivity_Users" />
+        <EntityTypeShape EntityType="News_AggregatorModel.UserPassword" Width="1.5" PointX="11.375" PointY="8.625" />
+        <AssociationConnector Association="News_AggregatorModel.FK_UserPasswords_Users" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

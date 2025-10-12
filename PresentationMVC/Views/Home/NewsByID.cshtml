@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "NewsByID";
+}
+
+<h5 class="mb-1">@Model.Title</h5>
+<div style="font-size: 12px;">
+    <label>Published: </label><small> @(Model.PublishedDate?.ToString("dd MMM yyyy"))</small><br />
+    <label>Source: </label><small> @Model.Source</small><br />
+    <label>Type: </label><small> @Model.Category</small><br />
+</div>
+<br />
+<p class="mb-1">
+    @Model.Description
+</p>
+<br />
+
+
+<div class="d-flex gap-2">
+
+    @if (TempData["activity"] != null && (bool)TempData["activity"])
+    {
+        <form method="post" action="/Home/RemoveActivity">
+            <input type="hidden" name="nid" value="@Model.ID" />
+            <button type="submit" class="btn btn-primary">Liked</button>
+        </form>
+    }
+    else
+    {
+        <form method="post" action="/Home/AddActivity">
+            <input type="hidden" name="nid" value="@Model.ID" />
+            <input type="hidden" name="activity" value="like" />
+            <button type="submit" class="btn btn-outline-primary">Like</button>
+        </form>
+    }
+
+    <form method="post" action="/Home/AddActivity">
+        <input type="hidden" name="nid" value="@Model.ID" />
+        <input type="hidden" name="activity" value="share" />
+        <button type="submit" class="btn btn-outline-success">Share</button>
+    </form>
+
+    @if (TempData["bookmark"] != null && (bool)TempData["bookmark"])
+    {
+        <form method="post" action="/Home/RemoveBookmark">
+            <input type="hidden" name="nid" value="@Model.ID" />
+            <button type="submit" class="btn btn-warning">Bookmarked</button>
+        </form>
+    }
+    else
+    {
+        <form method="post" action="/Home/AddBookmark">
+            <input type="hidden" name="nid" value="@Model.ID" />
+            <button type="submit" class="btn btn-outline-warning">Bookmark</button>
+        </form>
+    }
+    
+
+</div>

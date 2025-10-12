@@ -1,0 +1,101 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1,
+                   shrink-to-fit=no" />
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <title>Bootstrap Form</title>
+</head>
+
+<body>
+    <h1 class="text-success text-center">
+        News Aggregator
+    </h1>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post" action="/Login/Registration" class="p-4 border rounded shadow-sm bg-light"
+                              style="max-width: 450px; margin: auto;" onsubmit="return validatePasswordMatch();">
+
+                            <h4 class="text-center mb-4">Register</h4>
+
+                            <!-- Name -->
+                            <div class="form-group mb-3">
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required />
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required />
+                            </div>
+
+                            <!-- Role -->
+                            <div class="form-group mb-3">
+                                <label for="role">Role</label>
+                                <select class="form-control" id="role" name="role" required>
+                                    <option value="">-- Select Role --</option>
+                                    <option value="Reader">Reader</option>
+                                    <option value="Reporter">Reporter</option>
+                                    <option value="Editor">Editor</option>
+                                </select>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="pass" placeholder="Enter password" required />
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="form-group mb-3">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" name="ConfirmPassword"
+                                       placeholder="Confirm your password" required />
+                                <small id="passwordError" class="text-danger d-none">Passwords do not match.</small>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary w-100">Register</button>
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function validatePasswordMatch() {
+        const pass = document.getElementById("password").value;
+        const confirm = document.getElementById("confirmPassword").value;
+        const error = document.getElementById("passwordError");
+
+        if (pass !== confirm) {
+            error.classList.remove("d-none");
+            return false; // prevent form submission
+        } else {
+            error.classList.add("d-none");
+            return true; // allow submission
+        }
+    }
+</script>

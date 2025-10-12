@@ -1,0 +1,991 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationapi\\controllers\\filtercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\filtercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\newsfilterrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\newsfilterrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\filternewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\filternewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\editorworkflowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\editorworkflowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\ifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\reporterworkflowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\reporterworkflowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|c:\\users\\amits\\desktop\\final_api_project\\news_aggregator_api\\presentationapi\\controllers\\reportercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\reportercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationapi\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\loadratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\loadratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\loadandratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\loadandratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationapi\\controllers\\loadandratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\loadandratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationapi\\controllers\\readercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\readercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationapi\\controllers\\recommendationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\recommendationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationapi\\controllers\\publishercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\publishercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationapi\\controllers\\editorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\editorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7577D7-D574-4BFA-A2CF-1AC09E6E9C56}|PresentationAPI\\PresentationAPI.csproj|solutionrelative:presentationapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\recommendationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\recommendationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\readeractivityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\readeractivityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\recommendationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\recommendationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\publisherworkflowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\publisherworkflowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\loginrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\loginrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\userloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\userloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\views\\login\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\views\\login\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\views\\home\\newsbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\views\\home\\newsbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\irecommendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\irecommendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\publisherrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\publisherrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\tagrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\tagrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\views\\home\\popular.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\views\\home\\popular.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\views\\home\\recommend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\views\\home\\recommend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\presentationmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D482F280-F594-49C7-840C-10DF891CC1BF}|PresentationMVC\\PresentationMVC.csproj|solutionrelative:presentationmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\ipublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ipublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\itags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\itags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\newsworkflowrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\newsworkflowrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\newsrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\newsrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\dto\\submitnewsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\submitnewsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\dto\\userpassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\userpassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\services\\newsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\services\\newsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\publishfrequency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\publishfrequency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\ef\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\inews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\inews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\iactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\ieditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ieditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\pagednewsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\pagednewsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\repos\\editorrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\editorrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\iloadrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iloadrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\publishfrequencybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\publishfrequencybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\dto\\newsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\newsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\bll\\dto\\reporterratingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81ADA8FC-BC36-494F-8FBC-3B81654A5E20}|BLL\\BLL.csproj|solutionrelative:bll\\dto\\reporterratingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\dal\\interfaces\\iworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54292412-E65E-46BD-BF68-67B66FC11383}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NewsFilterRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\NewsFilterRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\NewsFilterRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\NewsFilterRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\NewsFilterRepo.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwDcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T05:56:53.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FilterController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\FilterController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\FilterController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\FilterController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\FilterController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:16:32.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditorWorkflowService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\EditorWorkflowService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\EditorWorkflowService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\EditorWorkflowService.cs",
+              "RelativeToolTip": "BLL\\Services\\EditorWorkflowService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T04:47:05.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IFilter.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IFilter.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IFilter.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IFilter.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T05:53:33.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FilterNewsService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\FilterNewsService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\FilterNewsService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\FilterNewsService.cs",
+              "RelativeToolTip": "BLL\\Services\\FilterNewsService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAEAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T05:51:22.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReporterWorkflowService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\ReporterWorkflowService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\ReporterWorkflowService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\ReporterWorkflowService.cs",
+              "RelativeToolTip": "BLL\\Services\\ReporterWorkflowService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAC0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:30:03.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReporterController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\ReporterController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\ReporterController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\ReporterController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\ReporterController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:26:15.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoadRatingRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\LoadRatingRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\LoadRatingRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\LoadRatingRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\LoadRatingRepo.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T20:38:07.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoadAndRatingService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\LoadAndRatingService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\LoadAndRatingService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\LoadAndRatingService.cs",
+              "RelativeToolTip": "BLL\\Services\\LoadAndRatingService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwB4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T20:29:38.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\NewsController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\NewsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:23:02.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoadAndRatingController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\LoadAndRatingController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\LoadAndRatingController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\LoadAndRatingController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\LoadAndRatingController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAAHoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:19:30.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RecommendationController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\RecommendationController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\RecommendationController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\RecommendationController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\RecommendationController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwDEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:25:33.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReaderController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\ReaderController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\ReaderController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\ReaderController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\ReaderController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAADAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:24:51.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PublisherController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\PublisherController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\PublisherController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\PublisherController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\PublisherController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwCEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:23:49.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditorController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\EditorController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\EditorController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\EditorController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\EditorController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T18:14:12.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "PresentationAPI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "PresentationAPI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwEYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T22:17:30.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RecommendationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\RecommendationRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\RecommendationRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\RecommendationRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\RecommendationRepo.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwE0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T15:52:30.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReaderActivityRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\ReaderActivityRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\ReaderActivityRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\ReaderActivityRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\ReaderActivityRepo.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T18:29:40.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RecommendationService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\RecommendationService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\RecommendationService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\RecommendationService.cs",
+              "RelativeToolTip": "BLL\\Services\\RecommendationService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T15:53:15.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PublisherWorkflowService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\PublisherWorkflowService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\PublisherWorkflowService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\PublisherWorkflowService.cs",
+              "RelativeToolTip": "BLL\\Services\\PublisherWorkflowService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:35:15.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TagService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\TagService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\TagService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\TagService.cs",
+              "RelativeToolTip": "BLL\\Services\\TagService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T09:23:11.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ILogin.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\ILogin.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ILogin.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\ILogin.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ILogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:36:23.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\LoginRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\LoginRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\LoginRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\LoginRepo.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwDMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:35:58.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserLoginService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\UserLoginService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\UserLoginService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\UserLoginService.cs",
+              "RelativeToolTip": "BLL\\Services\\UserLoginService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAawFMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:45:47.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "PresentationMVC\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "PresentationMVC\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:05:42.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PresentationMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PresentationMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T08:08:09.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Login\\Register.cshtml",
+              "RelativeDocumentMoniker": "PresentationMVC\\Views\\Login\\Register.cshtml",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Login\\Register.cshtml",
+              "RelativeToolTip": "PresentationMVC\\Views\\Login\\Register.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T10:40:43.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationMVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PresentationMVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T08:12:08.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationMVC\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "PresentationMVC\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAD8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-10T20:11:50.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "PresentationMVC\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "PresentationMVC\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:10:21.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IRecommendation.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IRecommendation.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IRecommendation.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IRecommendation.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IRecommendation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T15:54:40.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "NewsByID.cshtml",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Home\\NewsByID.cshtml",
+              "RelativeDocumentMoniker": "PresentationMVC\\Views\\Home\\NewsByID.cshtml",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Home\\NewsByID.cshtml",
+              "RelativeToolTip": "PresentationMVC\\Views\\Home\\NewsByID.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAC8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T13:56:31.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PublisherRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\PublisherRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\PublisherRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\PublisherRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\PublisherRepo.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:14:33.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TagRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\TagRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\TagRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\TagRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\TagRepo.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T09:33:01.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Popular.cshtml",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Home\\Popular.cshtml",
+              "RelativeDocumentMoniker": "PresentationMVC\\Views\\Home\\Popular.cshtml",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Home\\Popular.cshtml",
+              "RelativeToolTip": "PresentationMVC\\Views\\Home\\Popular.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T13:04:31.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Recommend.cshtml",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Home\\Recommend.cshtml",
+              "RelativeDocumentMoniker": "PresentationMVC\\Views\\Home\\Recommend.cshtml",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Home\\Recommend.cshtml",
+              "RelativeToolTip": "PresentationMVC\\Views\\Home\\Recommend.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T08:12:36.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PresentationMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\PresentationMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PresentationMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T12:54:52.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IPublisher.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IPublisher.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IPublisher.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:15:22.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ITags.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\ITags.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ITags.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\ITags.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ITags.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T09:57:39.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NewsWorkflowRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\NewsWorkflowRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\NewsWorkflowRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\NewsWorkflowRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\NewsWorkflowRepo.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAEIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:11:20.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "NewsRepos.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\NewsRepos.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\NewsRepos.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\NewsRepos.cs",
+              "RelativeToolTip": "DAL\\Repos\\NewsRepos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T08:48:17.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTO\\LoginRequestDTO.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\LoginRequestDTO.cs",
+              "RelativeToolTip": "BLL\\DTO\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T22:15:06.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MailService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\MailService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\MailService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\MailService.cs",
+              "RelativeToolTip": "BLL\\Services\\MailService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T22:56:44.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "SubmitNewsRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\SubmitNewsRequestDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTO\\SubmitNewsRequestDTO.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\SubmitNewsRequestDTO.cs",
+              "RelativeToolTip": "BLL\\DTO\\SubmitNewsRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:43:43.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UserPassDTO.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\UserPassDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTO\\UserPassDTO.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\UserPassDTO.cs",
+              "RelativeToolTip": "BLL\\DTO\\UserPassDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:45:04.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "NewsService.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\NewsService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\NewsService.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\Services\\NewsService.cs",
+              "RelativeToolTip": "BLL\\Services\\NewsService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwCgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T13:56:46.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DataAccessFactory.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\DataAccessFactory.cs",
+              "RelativeDocumentMoniker": "DAL\\DataAccessFactory.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\DataAccessFactory.cs",
+              "RelativeToolTip": "DAL\\DataAccessFactory.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAAD0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T07:27:10.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PublishFrequency.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\PublishFrequency.cs",
+              "RelativeDocumentMoniker": "DAL\\PublishFrequency.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\PublishFrequency.cs",
+              "RelativeToolTip": "DAL\\PublishFrequency.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T20:20:23.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\EF\\Model1.edmx",
+              "RelativeDocumentMoniker": "DAL\\EF\\Model1.edmx",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\EF\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "DAL\\EF\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-10-07T09:23:59.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "INews.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\INews.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\INews.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\INews.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\INews.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T08:51:48.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IActivity.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IActivity.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IActivity.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IActivity.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IActivity.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T18:30:09.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IEditor.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IEditor.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IEditor.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IEditor.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T06:17:17.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "PagedNewsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\PagedNewsViewModel.cs",
+              "RelativeDocumentMoniker": "BLL\\PagedNewsViewModel.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\PagedNewsViewModel.cs",
+              "RelativeToolTip": "BLL\\PagedNewsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T18:59:26.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "EditorRepo.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\EditorRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\EditorRepo.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Repos\\EditorRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\EditorRepo.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T06:11:31.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ILoadRating.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\ILoadRating.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ILoadRating.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\ILoadRating.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ILoadRating.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAASwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T20:36:39.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "PublishFrequencyBLL.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\PublishFrequencyBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\PublishFrequencyBLL.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\PublishFrequencyBLL.cs",
+              "RelativeToolTip": "BLL\\PublishFrequencyBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T07:26:22.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "NewsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\NewsDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTO\\NewsDTO.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\NewsDTO.cs",
+              "RelativeToolTip": "BLL\\DTO\\NewsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T17:22:19.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ReporterRatingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\ReporterRatingDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTO\\ReporterRatingDTO.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\BLL\\DTO\\ReporterRatingDTO.cs",
+              "RelativeToolTip": "BLL\\DTO\\ReporterRatingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T20:31:20.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IWorkflow.cs",
+              "DocumentMoniker": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IWorkflow.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IWorkflow.cs",
+              "ToolTip": "C:\\Users\\amits\\Desktop\\Final_API_Project\\News_Aggregator_API\\DAL\\Interfaces\\IWorkflow.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IWorkflow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:13:32.411Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

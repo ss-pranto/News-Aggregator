@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="News_AggregatorModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="varchar(max)" Nullable="false" />
+          <Property Name="Description" Type="text" Nullable="false" />
+          <Property Name="Source" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Category" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PublishedDate" Type="datetime" />
+          <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SubmittedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedAt" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NewsPopularity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NID" Type="int" Nullable="false" />
+          <Property Name="OpenCnt" Type="int" Nullable="false" />
+          <Property Name="LikeCnt" Type="int" Nullable="false" />
+          <Property Name="ShareCnt" Type="int" Nullable="false" />
+          <Property Name="PopularityScore" Type="float" />
+        </EntityType>
+        <EntityType Name="NewsTags">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NewsID" Type="int" Nullable="false" />
+          <Property Name="TagID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NewsWorkFlows">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NewsID" Type="int" Nullable="false" />
+          <Property Name="Action" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ActionBy" Type="int" Nullable="false" />
+          <Property Name="ActionDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ReaderActivity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReaderID" Type="int" Nullable="false" />
+          <Property Name="NewsID" Type="int" Nullable="false" />
+          <Property Name="Activity" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Recommendations">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="NewsID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ReporterRatings">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="Rating" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tags">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TagName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserPasswords">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UID" Type="int" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Role" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedAt" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_News_Users1">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="News" Type="Self.News" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="News">
+              <PropertyRef Name="SubmittedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewsPopularity_News">
+          <End Role="News" Type="Self.News" Multiplicity="1" />
+          <End Role="NewsPopularity" Type="Self.NewsPopularity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsPopularity">
+              <PropertyRef Name="NID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewsTags_News">
+          <End Role="News" Type="Self.News" Multiplicity="1" />
+          <End Role="NewsTags" Type="Self.NewsTags" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsTags">
+              <PropertyRef Name="NewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewsTags_Tags">
+          <End Role="Tags" Type="Self.Tags" Multiplicity="1" />
+          <End Role="NewsTags" Type="Self.NewsTags" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tags">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsTags">
+              <PropertyRef Name="TagID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewsWorkFlows_Users">
+          <End Role="News" Type="Self.News" Multiplicity="1" />
+          <End Role="NewsWorkFlows" Type="Self.NewsWorkFlows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsWorkFlows">
+              <PropertyRef Name="NewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewsWorkFlows_Users1">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="NewsWorkFlows" Type="Self.NewsWorkFlows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsWorkFlows">
+              <PropertyRef Name="ActionBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ReaderActivity_News">
+          <End Role="News" Type="Self.News" Multiplicity="1" />
+          <End Role="ReaderActivity" Type="Self.ReaderActivity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ReaderActivity">
+              <PropertyRef Name="NewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ReaderActivity_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="ReaderActivity" Type="Self.ReaderActivity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ReaderActivity">
+              <PropertyRef Name="ReaderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recommendations_News">
+          <End Role="News" Type="Self.News" Multiplicity="1" />
+          <End Role="Recommendations" Type="Self.Recommendations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Recommendations">
+              <PropertyRef Name="NewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recommendations_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Recommendations" Type="Self.Recommendations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Recommendations">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ReporterRatings_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="ReporterRatings" Type="Self.ReporterRatings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ReporterRatings">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPasswords_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="UserPasswords" Type="Self.UserPasswords" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserPasswords">
+              <PropertyRef Name="UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="News_AggregatorModelStoreContainer">
+          <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NewsPopularity" EntityType="Self.NewsPopularity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NewsTags" EntityType="Self.NewsTags" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NewsWorkFlows" EntityType="Self.NewsWorkFlows" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ReaderActivity" EntityType="Self.ReaderActivity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Recommendations" EntityType="Self.Recommendations" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ReporterRatings" EntityType="Self.ReporterRatings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tags" EntityType="Self.Tags" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserPasswords" EntityType="Self.UserPasswords" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_News_Users1" Association="Self.FK_News_Users1">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="News" EntitySet="News" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewsPopularity_News" Association="Self.FK_NewsPopularity_News">
+            <End Role="News" EntitySet="News" />
+            <End Role="NewsPopularity" EntitySet="NewsPopularity" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewsTags_News" Association="Self.FK_NewsTags_News">
+            <End Role="News" EntitySet="News" />
+            <End Role="NewsTags" EntitySet="NewsTags" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewsTags_Tags" Association="Self.FK_NewsTags_Tags">
+            <End Role="Tags" EntitySet="Tags" />
+            <End Role="NewsTags" EntitySet="NewsTags" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewsWorkFlows_Users" Association="Self.FK_NewsWorkFlows_Users">
+            <End Role="News" EntitySet="News" />
+            <End Role="NewsWorkFlows" EntitySet="NewsWorkFlows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewsWorkFlows_Users1" Association="Self.FK_NewsWorkFlows_Users1">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="NewsWorkFlows" EntitySet="NewsWorkFlows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ReaderActivity_News" Association="Self.FK_ReaderActivity_News">
+            <End Role="News" EntitySet="News" />
+            <End Role="ReaderActivity" EntitySet="ReaderActivity" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ReaderActivity_Users" Association="Self.FK_ReaderActivity_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="ReaderActivity" EntitySet="ReaderActivity" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recommendations_News" Association="Self.FK_Recommendations_News">
+            <End Role="News" EntitySet="News" />
+            <End Role="Recommendations" EntitySet="Recommendations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recommendations_Users" Association="Self.FK_Recommendations_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Recommendations" EntitySet="Recommendations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ReporterRatings_Users" Association="Self.FK_ReporterRatings_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="ReporterRatings" EntitySet="ReporterRatings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPasswords_Users" Association="Self.FK_UserPasswords_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserPasswords" EntitySet="UserPasswords" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="News_AggregatorModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Source" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PublishedDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SubmittedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedAt" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="User" Relationship="Self.FK_News_Users1" FromRole="News" ToRole="Users" />
+          <NavigationProperty Name="NewsWorkFlows" Relationship="Self.FK_NewsWorkFlows_Users" FromRole="News" ToRole="NewsWorkFlows" />
+          <NavigationProperty Name="Recommendations" Relationship="Self.FK_Recommendations_News" FromRole="News" ToRole="Recommendations" />
+          <NavigationProperty Name="NewsTags" Relationship="News_AggregatorModel.FK_NewsTags_News" FromRole="News" ToRole="NewsTag" />
+          <NavigationProperty Name="NewsPopularities" Relationship="News_AggregatorModel.FK_NewsPopularity_News" FromRole="News" ToRole="NewsPopularity" />
+          <NavigationProperty Name="ReaderActivities" Relationship="News_AggregatorModel.FK_ReaderActivity_News" FromRole="News" ToRole="ReaderActivity" />
+        </EntityType>
+        <EntityType Name="NewsWorkFlow">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NewsID" Type="Int32" Nullable="false" />
+          <Property Name="Action" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ActionBy" Type="Int32" Nullable="false" />
+          <Property Name="ActionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="News" Relationship="Self.FK_NewsWorkFlows_Users" FromRole="NewsWorkFlows" ToRole="News" />
+          <NavigationProperty Name="User" Relationship="Self.FK_NewsWorkFlows_Users1" FromRole="NewsWorkFlows" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Recommendation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="NewsID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="News" Relationship="Self.FK_Recommendations_News" FromRole="Recommendations" ToRole="News" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Recommendations_Users" FromRole="Recommendations" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Tag">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TagName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="NewsTags" Relationship="News_AggregatorModel.FK_NewsTags_Tags" FromRole="Tag" ToRole="NewsTag" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CreatedAt" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="News" Relationship="Self.FK_News_Users1" FromRole="Users" ToRole="News" />
+          <NavigationProperty Name="NewsWorkFlows" Relationship="Self.FK_NewsWorkFlows_Users1" FromRole="Users" ToRole="NewsWorkFlows" />
+          <NavigationProperty Name="Recommendations" Relationship="Self.FK_Recommendations_Users" FromRole="Users" ToRole="Recommendations" />
+          <NavigationProperty Name="ReporterRatings" Relationship="News_AggregatorModel.FK_ReporterRatings_Users" FromRole="User" ToRole="ReporterRating" />
+          <NavigationProperty Name="ReaderActivities" Relationship="News_AggregatorModel.FK_ReaderActivity_Users" FromRole="User" ToRole="ReaderActivity" />
+          <NavigationProperty Name="UserPasswords" Relationship="News_AggregatorModel.FK_UserPasswords_Users" FromRole="User" ToRole="UserPassword" />
+        </EntityType>
+        <Association Name="FK_News_Users1">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="News" Type="Self.News" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="News">
+              <PropertyRef Name="SubmittedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewsWorkFlows_Users">
+          <End Role="News" Type="Self.News" Multiplicity="1" />
+          <End Role="NewsWorkFlows" Type="Self.NewsWorkFlow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsWorkFlows">
+              <PropertyRef Name="NewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recommendations_News">
+          <End Role="News" Type="Self.News" Multiplicity="1" />
+          <End Role="Recommendations" Type="Self.Recommendation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Recommendations">
+              <PropertyRef Name="NewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewsWorkFlows_Users1">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="NewsWorkFlows" Type="Self.NewsWorkFlow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsWorkFlows">
+              <PropertyRef Name="ActionBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recommendations_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Recommendations" Type="Self.Recommendation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Recommendations">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="News_AggregatorEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="News" EntityType="Self.News" />
+          <EntitySet Name="NewsWorkFlows" EntityType="Self.NewsWorkFlow" />
+          <EntitySet Name="Recommendations" EntityType="Self.Recommendation" />
+          <EntitySet Name="Tags" EntityType="Self.Tag" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK_News_Users1" Association="Self.FK_News_Users1">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="News" EntitySet="News" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewsWorkFlows_Users" Association="Self.FK_NewsWorkFlows_Users">
+            <End Role="News" EntitySet="News" />
+            <End Role="NewsWorkFlows" EntitySet="NewsWorkFlows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recommendations_News" Association="Self.FK_Recommendations_News">
+            <End Role="News" EntitySet="News" />
+            <End Role="Recommendations" EntitySet="Recommendations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewsWorkFlows_Users1" Association="Self.FK_NewsWorkFlows_Users1">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="NewsWorkFlows" EntitySet="NewsWorkFlows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recommendations_Users" Association="Self.FK_Recommendations_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Recommendations" EntitySet="Recommendations" />
+          </AssociationSet>
+          <EntitySet Name="NewsTags" EntityType="News_AggregatorModel.NewsTag" />
+          <AssociationSet Name="FK_NewsTags_News" Association="News_AggregatorModel.FK_NewsTags_News">
+            <End Role="News" EntitySet="News" />
+            <End Role="NewsTag" EntitySet="NewsTags" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewsTags_Tags" Association="News_AggregatorModel.FK_NewsTags_Tags">
+            <End Role="Tag" EntitySet="Tags" />
+            <End Role="NewsTag" EntitySet="NewsTags" />
+          </AssociationSet>
+          <EntitySet Name="ReporterRatings" EntityType="News_AggregatorModel.ReporterRating" />
+          <AssociationSet Name="FK_ReporterRatings_Users" Association="News_AggregatorModel.FK_ReporterRatings_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="ReporterRating" EntitySet="ReporterRatings" />
+          </AssociationSet>
+          <EntitySet Name="NewsPopularities" EntityType="News_AggregatorModel.NewsPopularity" />
+          <AssociationSet Name="FK_NewsPopularity_News" Association="News_AggregatorModel.FK_NewsPopularity_News">
+            <End Role="News" EntitySet="News" />
+            <End Role="NewsPopularity" EntitySet="NewsPopularities" />
+          </AssociationSet>
+          <EntitySet Name="ReaderActivities" EntityType="News_AggregatorModel.ReaderActivity" />
+          <AssociationSet Name="FK_ReaderActivity_News" Association="News_AggregatorModel.FK_ReaderActivity_News">
+            <End Role="News" EntitySet="News" />
+            <End Role="ReaderActivity" EntitySet="ReaderActivities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ReaderActivity_Users" Association="News_AggregatorModel.FK_ReaderActivity_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="ReaderActivity" EntitySet="ReaderActivities" />
+          </AssociationSet>
+          <EntitySet Name="UserPasswords" EntityType="News_AggregatorModel.UserPassword" />
+          <AssociationSet Name="FK_UserPasswords_Users" Association="News_AggregatorModel.FK_UserPasswords_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserPassword" EntitySet="UserPasswords" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="NewsTag">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NewsID" Type="Int32" Nullable="false" />
+          <Property Name="TagID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="News" Relationship="News_AggregatorModel.FK_NewsTags_News" FromRole="NewsTag" ToRole="News" />
+          <NavigationProperty Name="Tag" Relationship="News_AggregatorModel.FK_NewsTags_Tags" FromRole="NewsTag" ToRole="Tag" />
+        </EntityType>
+        <Association Name="FK_NewsTags_News">
+          <End Type="News_AggregatorModel.News" Role="News" Multiplicity="1" />
+          <End Type="News_AggregatorModel.NewsTag" Role="NewsTag" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsTag">
+              <PropertyRef Name="NewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewsTags_Tags">
+          <End Type="News_AggregatorModel.Tag" Role="Tag" Multiplicity="1" />
+          <End Type="News_AggregatorModel.NewsTag" Role="NewsTag" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tag">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsTag">
+              <PropertyRef Name="TagID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ReporterRating">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="Rating" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="News_AggregatorModel.FK_ReporterRatings_Users" FromRole="ReporterRating" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_ReporterRatings_Users">
+          <End Type="News_AggregatorModel.User" Role="User" Multiplicity="1" />
+          <End Type="News_AggregatorModel.ReporterRating" Role="ReporterRating" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ReporterRating">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="NewsPopularity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NID" Type="Int32" Nullable="false" />
+          <Property Name="OpenCnt" Type="Int32" Nullable="false" />
+          <Property Name="ShareCnt" Type="Int32" Nullable="false" />
+          <Property Name="PopularityScore" Type="Double" />
+          <NavigationProperty Name="News" Relationship="News_AggregatorModel.FK_NewsPopularity_News" FromRole="NewsPopularity" ToRole="News" />
+          <Property Name="LikeCnt" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_NewsPopularity_News">
+          <End Type="News_AggregatorModel.News" Role="News" Multiplicity="1" />
+          <End Type="News_AggregatorModel.NewsPopularity" Role="NewsPopularity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="NewsPopularity">
+              <PropertyRef Name="NID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ReaderActivity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReaderID" Type="Int32" Nullable="false" />
+          <Property Name="NewsID" Type="Int32" Nullable="false" />
+          <Property Name="Activity" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="News" Relationship="News_AggregatorModel.FK_ReaderActivity_News" FromRole="ReaderActivity" ToRole="News" />
+          <NavigationProperty Name="User" Relationship="News_AggregatorModel.FK_ReaderActivity_Users" FromRole="ReaderActivity" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_ReaderActivity_News">
+          <End Type="News_AggregatorModel.News" Role="News" Multiplicity="1" />
+          <End Type="News_AggregatorModel.ReaderActivity" Role="ReaderActivity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ReaderActivity">
+              <PropertyRef Name="NewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ReaderActivity_Users">
+          <End Type="News_AggregatorModel.User" Role="User" Multiplicity="1" />
+          <End Type="News_AggregatorModel.ReaderActivity" Role="ReaderActivity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ReaderActivity">
+              <PropertyRef Name="ReaderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UserPassword">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UID" Type="Int32" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="User" Relationship="News_AggregatorModel.FK_UserPasswords_Users" FromRole="UserPassword" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_UserPasswords_Users">
+          <End Type="News_AggregatorModel.User" Role="User" Multiplicity="1" />
+          <End Type="News_AggregatorModel.UserPassword" Role="UserPassword" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserPassword">
+              <PropertyRef Name="UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="News_AggregatorModelStoreContainer" CdmEntityContainer="News_AggregatorEntities">
+          <EntitySetMapping Name="News">
+            <EntityTypeMapping TypeName="News_AggregatorModel.News">
+              <MappingFragment StoreEntitySet="News">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="PublishedDate" ColumnName="PublishedDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="SubmittedBy" ColumnName="SubmittedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsWorkFlows">
+            <EntityTypeMapping TypeName="News_AggregatorModel.NewsWorkFlow">
+              <MappingFragment StoreEntitySet="NewsWorkFlows">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="ActionBy" ColumnName="ActionBy" />
+                <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recommendations">
+            <EntityTypeMapping TypeName="News_AggregatorModel.Recommendation">
+              <MappingFragment StoreEntitySet="Recommendations">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tags">
+            <EntityTypeMapping TypeName="News_AggregatorModel.Tag">
+              <MappingFragment StoreEntitySet="Tags">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TagName" ColumnName="TagName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="News_AggregatorModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsTags">
+            <EntityTypeMapping TypeName="News_AggregatorModel.NewsTag">
+              <MappingFragment StoreEntitySet="NewsTags">
+                <ScalarProperty Name="TagID" ColumnName="TagID" />
+                <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ReporterRatings">
+            <EntityTypeMapping TypeName="News_AggregatorModel.ReporterRating">
+              <MappingFragment StoreEntitySet="ReporterRatings">
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsPopularities">
+            <EntityTypeMapping TypeName="News_AggregatorModel.NewsPopularity">
+              <MappingFragment StoreEntitySet="NewsPopularity">
+                <ScalarProperty Name="LikeCnt" ColumnName="LikeCnt" />
+                <ScalarProperty Name="PopularityScore" ColumnName="PopularityScore" />
+                <ScalarProperty Name="ShareCnt" ColumnName="ShareCnt" />
+                <ScalarProperty Name="OpenCnt" ColumnName="OpenCnt" />
+                <ScalarProperty Name="NID" ColumnName="NID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ReaderActivities">
+            <EntityTypeMapping TypeName="News_AggregatorModel.ReaderActivity">
+              <MappingFragment StoreEntitySet="ReaderActivity">
+                <ScalarProperty Name="Activity" ColumnName="Activity" />
+                <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+                <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserPasswords">
+            <EntityTypeMapping TypeName="News_AggregatorModel.UserPassword">
+              <MappingFragment StoreEntitySet="UserPasswords">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UID" ColumnName="UID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

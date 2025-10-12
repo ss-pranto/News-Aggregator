@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Recommend";
+}
+
+<h2>Recommended news list</h2>
+
+@foreach (var item in Model)
+{
+    <div class="list-group" style="width: 75%;">
+        <a href="/Home/NewsByID/@item.ID" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">@item.Title</h5>
+                <small>@(item.PublishedDate?.ToString("dd MMM yyyy"))</small>
+            </div>
+            <p class="mb-1" style="
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                max-width: 100%;">
+                @item.Description
+            </p>
+            <div class="d-flex w-100 justify-content-between">
+                <small>@item.Source</small>
+                <small>@item.Category</small>
+            </div>
+        </a>
+    </div>
+    <br />
+}
+
